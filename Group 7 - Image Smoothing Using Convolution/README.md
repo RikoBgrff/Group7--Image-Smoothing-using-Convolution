@@ -1,8 +1,8 @@
-Image Smoothing Using Convolution – README
+Image Smoothing Using Convolution
 
-This project demonstrates convolution-based image smoothing using Gaussian and Box (mean) filters. It was developed for the EEE309 / EEE311 Signals and Systems Interdisciplinary Term Project.
+This repository contains the full implementation and documentation for the "Image Smoothing Using Convolution" project, developed as part of the EEE309 / EEE311 Signals and Systems Interdisciplinary Term Project. The aim of the project is to apply convolution-based smoothing techniques to a real-world image using Python.
 
-📁 Project Structure
+Project Structure
 Image Smoothing Using Convolution/
 │
 ├── code/
@@ -15,118 +15,65 @@ Image Smoothing Using Convolution/
 │   │   └── box_filtered.jpg
 │
 └── documents/
-    ├── GROUP7 - Image Smoothing using Convolution.docx
-    └── GROUP7 - Image Smoothing using Convolution.pdf
+    ├── GROUP7- Image Smoothing using Convolution.docx
+    └── GROUP7- Image Smoothing using Convolution.pdf
 
-code/
+Description
 
-Contains:
+This project demonstrates the use of convolution for image smoothing by applying two filtering techniques:
 
-main.py → Python implementation of the convolution-based smoothing
+Gaussian Smoothing
 
-assets/ → input image and all automatically generated output images
+Box (Mean) Smoothing
 
-code/assets/
+The Python script resizes the input image, converts it to grayscale, applies both filters, and saves the resulting output images.
 
-realPhoto.jpg → the original input image
+Requirements
 
-Generated outputs:
+Python 3.x
+Required libraries:
 
-resized_500x500.jpg
+Pillow
 
-grayscale.jpg
+Matplotlib
 
-gaussian_filtered.jpg
+Install dependencies with:
 
-box_filtered.jpg
+pip install pillow matplotlib
 
-documents/
+How to Run
 
-Contains the official project report in both formats:
+Clone or download the repository.
+
+Open the project folder in Visual Studio Code.
+
+Open the terminal inside VS Code.
+
+Navigate to the code folder:
+
+cd code
+
+
+Run the script:
+
+python main.py
+
+
+Or if required:
+
+python3 main.py
+
+
+Processed images will be saved in code/assets/.
+
+Documentation
+
+The complete project report is located in the documents folder:
 
 GROUP7- Image Smoothing using Convolution.docx
 
 GROUP7- Image Smoothing using Convolution.pdf
 
-🚀 How to Run the Project
-1. Extract the ZIP File
+Purpose
 
-Unzip the folder named:
-
-Image Smoothing Using Convolution
-
-2. Open the Project in Visual Studio Code
-
-Open VS Code
-
-Press Ctrl + K, then O
-
-Select the Image Smoothing Using Convolution folder
-
-3. Install Required Python Libraries
-
-Open the terminal:
-
-Press Ctrl + J (or Ctrl + `)
-
-Install dependencies:
-
-pip install pillow matplotlib
-
-
-If Python 3 specifically is required:
-
-pip3 install pillow matplotlib
-
-4. Run the Python Script
-
-Navigate to the code folder (if needed):
-
-cd code
-
-
-Then run:
-
-python main.py
-
-
-or
-
-python3 main.py
-
-📤 Output
-
-Upon running the script, all processed images will be saved in:
-
-code/assets/
-
-
-Generated files:
-
-resized_500x500.jpg
-
-grayscale.jpg
-
-gaussian_filtered.jpg
-
-box_filtered.jpg
-
-A visualization window will also appear displaying all 4 results.
-
-🛠️ Tools & Technologies
-
-Python
-
-Pillow (PIL)
-
-Matplotlib
-
-Visual Studio Code
-
-📚 Project Documentation
-
-Located in the documents/ folder:
-
-GROUP7 - Image Smoothing using Convolution.docx
-
-GROUP7 - Image Smoothing using Convolution.pdf
+This repository serves as a structured, reproducible, and academically aligned example of convolution-based filtering in Python for noise reduction and image preprocessing.
